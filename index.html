@@ -7,165 +7,199 @@
     <title>Currículo Profissional</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto': ['Roboto', 'sans-serif']
+                    },
+                    colors: {
+                        'primary': '#2c3e50',
+                        'secondary': '#34495e',
+                        'accent': '#3498db',
+                        'sidebar-bg': '#f4f6f7'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <div class="resume-container">
-        <aside class="sidebar">
-            <div class="profile-section">
-                <div class="profile-img-container">
-                    <img src="LAS_3581.jpg" alt="Foto de Perfil" class="profile-img">
+<body class="font-roboto bg-gray-200 text-gray-800 flex justify-center min-h-screen py-8">
+    <div class="flex w-[300mm] min-h-[297mm] mx-auto">
+        <aside class="w-[30%] bg-sidebar-bg text-primary p-8 flex flex-col gap-8">
+            <div class="text-center">
+                <div class="w-36 h-36 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                    <img src="LAS_3581.jpg" alt="Foto de Perfil" class="w-full h-full object-cover">
                 </div>
-                <h1 class="name">NATANAEL SANTOS DA SILVA RAMOS</h1>
-                <h2 class="title">Desenvolvedor Web, Analista de Infraestrutura</h2>
+                <h1 class="text-3xl text-primary mb-2 uppercase tracking-wide">NATANAEL SANTOS DA SILVA RAMOS</h1>
+                <h2 class="text-base text-gray-600 font-normal">Analista de Infraestrutura <br> Desenvolvedor Web</h2>
             </div>
 
-            <div class="contact-section">
-                <h3>Contato</h3>
-                <ul class="contact-list">
-                    <li>
-                        <i class="fas fa-phone"></i>
+            <div>
+                <h3 class="text-xl uppercase border-b-2 border-accent pb-2 mb-4 text-primary">Contato</h3>
+                <ul class="list-none">
+                    <li class="flex items-center mb-4 text-sm">
+                        <i class="fas fa-phone w-6 text-accent mr-2"></i>
                         <span>(62) 99963-3100</span>
                     </li>
-                    <li>
-                        <i class="fas fa-envelope"></i>
+                    <li class="flex items-center mb-4 text-sm">
+                        <i class="fas fa-envelope w-6 text-accent mr-2"></i>
                         <span>natanael2ilva@gmail.com</span>
                     </li>
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
+                    <li class="flex items-center mb-4 text-sm">
+                        <i class="fas fa-map-marker-alt w-6 text-accent mr-2"></i>
                         <span>Goiania, GO</span>
                     </li>
-                    <li>
-                        <i class="fab fa-linkedin"></i>
+                    <li class="flex items-center mb-4 text-sm">
+                        <i class="fab fa-linkedin w-6 text-accent mr-2"></i>
                         <span>linkedin.com/in/natanael2ilva</span>
                     </li>
-                    <li>
-                        <i class="fas fa-globe"></i>
-                        <span>natanael2ilva.github.io</span>
+                    <li class="flex items-center mb-4 text-sm">
+                        <i class="fas fa-globe w-6 text-accent mr-2"></i>
+                        <span>https://n2ilva.github.io/MeuPortifolio/</span>
                     </li>
                 </ul>
             </div>
 
-            <div class="skills-section">
-                <h3>Habilidades</h3>
-                <ul class="skills-list">
-                    <li>HTML5 & CSS3</li>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>React.js</li>
-                    <li>Angular</li>
-                    <li>Node.js</li>
-                    <li>Git & GitHub</li>
-                    <li>Design Responsivo</li>
-                    <li>FireBase</li>
-                    <li>SQL | NoSQL</li>
+            <div>
+                <h3 class="text-xl uppercase border-b-2 border-accent pb-2 mb-4 text-primary">Habilidades</h3>
+                <ul class="list-none">
+                    <li class="bg-white py-1 px-3 mb-2 rounded text-sm border-l-4 border-accent">HTML5 & CSS3</li>
+                    <li class="bg-white py-1 px-3 mb-2 rounded text-sm border-l-4 border-accent">JavaScript</li>
+                    <li class="bg-white py-1 px-3 mb-2 rounded text-sm border-l-4 border-accent">TypeScript</li>
+                    <li class="bg-white py-1 px-3 mb-2 rounded text-sm border-l-4 border-accent">React.js</li>
+                    <li class="bg-white py-1 px-3 mb-2 rounded text-sm border-l-4 border-accent">React-Native</li>
+                    <li class="bg-white py-1 px-3 mb-2 rounded text-sm border-l-4 border-accent">Node.Js</li>
+                    <li class="bg-white py-1 px-3 mb-2 rounded text-sm border-l-4 border-accent">Next.Js</li>
+                    <li class="bg-white py-1 px-3 mb-2 rounded text-sm border-l-4 border-accent">Git & GitHub</li>
+                    <li class="bg-white py-1 px-3 mb-2 rounded text-sm border-l-4 border-accent">SQL | NoSQL</li>
                 </ul>
             </div>
 
-            <div class="languages-section">
-                <h3>Idiomas</h3>
-                <ul class="languages-list">
-                    <li>
-                        <span class="lang-name">Português</span>
-                        <span class="lang-level">Nativo</span>
+            <div>
+                <h3 class="text-xl uppercase border-b-2 border-accent pb-2 mb-4 text-primary">Idiomas</h3>
+                <ul class="list-none">
+                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                        <span>Português</span>
+                        <span class="font-bold text-gray-600 text-sm">Nativo</span>
                     </li>
-                    <li>
-                        <span class="lang-name">Inglês</span>
-                        <span class="lang-level">Intermediário</span>
+                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                        <span>Inglês</span>
+                        <span class="font-bold text-gray-600 text-sm">Básico</span>
                     </li>
-                    <li>
-                        <span class="lang-name">Espanhol</span>
-                        <span class="lang-level">Intermediário</span>
+                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                        <span>Espanhol</span>
+                        <span class="font-bold text-gray-600 text-sm">Básico</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-xl uppercase border-b-2 border-accent pb-2 mb-4 text-primary">Pretensões</h3>
+                <ul class="list-none">
+                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                        <span>Pretensão Salarial</span>
+                        <span class="font-bold text-gray-600 text-sm">A combinar</span>
+                    </li>
+                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                        <span>Regime de Trabalho</span>
+                        <span class="font-bold text-gray-600 text-sm">CLT | PJ</span>
                     </li>
                 </ul>
             </div>
         </aside>
 
-        <main class="main-content">
-            <section class="summary-section">
-                <h2 class="section-title">Sobre Mim</h2>
-                <p>
-                    Profissional dedicado e criativo, com sólida experiência em desenvolvimento web e mobile,
-                    incluindo bancos de dados SQL e NoSQL. Possuo conhecimento avançado em redes de computadores
-                    e sou formado pela Uninove em SP.
+        <main class="w-[70%] p-5">
+            <section>
+                <h2 class="text-2xl text-primary border-b-2 border-gray-200 pb-2 mb-8 flex items-center">Sobre Mim</h2>
+                <p class="text-gray-800 text-justify">
+                    Experiência sólida em <strong>Infraestrutura de Redes de Computadores</strong> com <strong>6 anos</strong> de
+                    atuação, agora focado nos estudos de desenvolvimento
+                    web e mobile para me tornar um desenvolvedor Full Stack completo.
                 </p>
             </section>
 
-            <section class="experience-section">
-                <h2 class="section-title">Experiência Profissional</h2>
+            <section>
+                <h2 class="text-2xl text-primary border-b-2 border-gray-200 pb-2 mb-8 mt-8 flex items-center">
+                    Experiência Profissional</h2>
 
-                <div class="experience-item">
-                    <div class="exp-header">
-                        <h3 class="exp-role">Analista de Infraestrutura</h3>
-                        <span class="exp-date">2021 - 2025</span>
+                <div class="mb-8">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="text-lg font-bold text-secondary">Suporte Técnico</h3>
+                        <span class="text-sm text-accent font-medium">2021 - 2025</span>
                     </div>
-                    <h4 class="exp-company">Dexian Brasil</h4>
-                    <p class="exp-description">
-                        Atuação em suporte técnico especializado, realizando manutenção preventiva e corretiva de
-                        equipamentos de rede (Switches, Roteadores, Firewalls).
-                        Responsável pela configuração de servidores e implementação de soluções robustas de segurança da
-                        informação.
+                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Dexian Brasil</h4>
+                    <p class="text-gray-800 text-justify">
+                        Suporte técnico especializado com foco em manutenção preventiva e corretiva de equipamentos de
+                        rede (Switches, Roteadores, Firewalls).
+                        Responsável pelo atendimento aos usuários, garantindo disponibilidade de computadores e
+                        conectividade Wi-Fi/Ethernet.
+                        Colaboração com analistas de infraestrutura em projetos estratégicos de modernização e
+                        otimização da infraestrutura tecnológica.
                     </p>
                 </div>
 
-                <div class="experience-item">
-                    <div class="exp-header">
-                        <h3 class="exp-role">Tecnico de Suporte</h3>
-                        <span class="exp-date">2019 - 2021</span>
+                <div class="mb-8">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="text-lg font-bold text-secondary">Suporte Técnico</h3>
+                        <span class="text-sm text-accent font-medium">2020 - 2021</span>
                     </div>
-                    <h4 class="exp-company">Solid Técnologia</h4>
-                    <p class="exp-description">
+                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Solid Técnologia</h4>
+                    <p class="text-gray-800 text-justify">
                         Prestação de suporte técnico e gestão de infraestrutura de rede.
                         Configuração e monitoramento de ativos de rede e administração de servidores,
                         garantindo a segurança e disponibilidade dos serviços.
                     </p>
                 </div>
 
-                <div class="experience-item">
-                    <div class="exp-header">
-                        <h3 class="exp-role">Analista SD-WAN</h3>
-                        <span class="exp-date">2016 - 2017</span>
+                <div class="mb-8">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="text-lg font-bold text-secondary">Analista SD-WAN</h3>
+                        <span class="text-sm text-accent font-medium">2017 - 2019</span>
                     </div>
-                    <h4 class="exp-company">Ericsson</h4>
-                    <p class="exp-description">
-                        Atuação na implantação e sustentação de sistemas SD-WAN.
+                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Ericsson</h4>
+                    <p class="text-gray-800 text-justify">
+                        Atuação na implantação e sustentação de sistemas SD-WAN em Agências Bancárias.
                         Responsável pela configuração avançada e troubleshooting de Switches e Roteadores.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="text-lg font-bold text-secondary">Analista De Redes N2</h3>
+                        <span class="text-sm text-accent font-medium">2016 - 2017</span>
+                    </div>
+                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Ericsson</h4>
+                    <p class="text-gray-800 text-justify">
+                        Responsável pela disponibilidade e funcionamento de redes de Dados e Voz para empresas contratadas pela Telefônica Brasil. 
+                        Gerenciamento de tickets com diferentes níveis de prioridade conforme SLA e porte do cliente. 
+                        Execução de testes e configurações em switches, incluindo troubleshooting e ajustes para otimização da rede.
+                        Coordenação de equipes técnicas de campo para resolução de incidentes que não podiam ser solucionados remotamente.
                     </p>
                 </div>
             </section>
 
-            <section class="education-section">
-                <h2 class="section-title">Formação Acadêmica</h2>
+            <section>
+                <h2 class="text-2xl text-primary border-b-2 border-gray-200 pb-2 mb-8 mt-8 flex items-center">Formação
+                    Acadêmica</h2>
 
-                <div class="education-item">
-                    <div class="edu-header">
-                        <h3 class="edu-degree">Análise e Desenvolvimento de Sistemas</h3>
-                        <span class="edu-date">2025 - Presente</span>
+                <div class="mb-8">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="text-lg font-bold text-secondary">Análise e Desenvolvimento de Sistemas</h3>
+                        <span class="text-sm text-accent font-medium">2025 - Presente</span>
                     </div>
-                    <h4 class="edu-school">Estácio de Sá</h4>
+                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Estácio de Sá</h4>
                 </div>
 
-                <div class="education-item">
-                    <div class="edu-header">
-                        <h3 class="edu-degree">Redes de Computadores</h3>
-                        <span class="edu-date">2023 - 2025</span>
+                <div class="mb-8">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="text-lg font-bold text-secondary">Redes de Computadores</h3>
+                        <span class="text-sm text-accent font-medium">2023 - 2025</span>
                     </div>
-                    <h4 class="edu-school">Uninove</h4>
-                </div>
-            </section>
-
-            <section class="projects-section">
-                <h2 class="section-title">Projetos Relevantes</h2>
-                <div class="project-item">
-                    <h3>App de Tarefas Compartilhadas</h3>
-                    <p>Desenvolvimento de plataforma colaborativa para gerenciamento e compartilhamento de tarefas em
-                        tempo real, focada em usabilidade.</p>
-                </div>
-                <div class="project-item">
-                    <h3>Site Profissional</h3>
-                    <p>Portal educacional voltado para gestores escolares, integrando biblioteca digital, acervo de
-                        vídeos e jogos educativos interativos.</p>
+                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Uninove</h4>
                 </div>
             </section>
         </main>
