@@ -25,194 +25,253 @@
             }
         }
     </script>
+    <style>
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                background: white;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
 </head>
 
-<body class="font-roboto bg-gray-200 text-gray-800 flex justify-center min-h-screen py-8">
-    <div class="flex w-[300mm] min-h-[297mm] mx-auto">
-        <aside class="w-[30%] bg-sidebar-bg text-primary p-8 flex flex-col gap-8">
+<body class="font-roboto bg-white text-gray-800 flex justify-center m-0 p-0">
+    <div class="flex w-[210mm] h-[297mm] mx-auto">
+        <aside class="w-[30%] bg-sidebar-bg text-primary p-4 flex flex-col gap-3">
             <div class="text-center">
-                <div class="w-36 h-36 mx-auto mb-4 rounded-full overflow-hidden border-4 border-white shadow-md">
+                <div class="w-24 h-24 mx-auto mb-2 rounded-full overflow-hidden border-4 border-white shadow-md">
                     <img src="1767656787506.png" alt="Foto de Perfil" class="w-full h-full object-cover">
                 </div>
-                <h1 class="text-3xl text-primary mb-2 uppercase tracking-wide">NATANAEL SANTOS DA SILVA RAMOS</h1>
-                <h2 class="text-base text-gray-600 font-normal">Analista de Infraestrutura de Redes</h2>
+                <h1 class="text-xl text-primary mb-1 uppercase tracking-wide leading-tight">NATANAEL SANTOS DA SILVA RAMOS</h1>
+                <h2 class="text-sm text-gray-600 font-normal">Analista de Infraestrutura de Redes</h2>
             </div>
 
             <div>
-                <h3 class="text-xl uppercase border-b-2 border-accent pb-2 mb-4 text-primary">Contato</h3>
+                <h3 class="text-base uppercase border-b-2 border-accent pb-1 mb-2 text-primary font-bold">Contato</h3>
                 <ul class="list-none">
-                    <li class="flex items-center mb-4 text-sm">
+                    <li class="flex items-center mb-2 text-xs">
                         <i class="fas fa-phone w-6 text-accent mr-2"></i>
                         <a href="tel:+5562999633100" class="hover:text-accent">(62) 99963-3100</a>
                     </li>
-                    <li class="flex items-center mb-4 text-sm">
+                    <li class="flex items-center mb-2 text-xs">
                         <i class="fas fa-envelope w-6 text-accent mr-2"></i>
                         <a href="mailto:natanael2ilva@gmail.com" class="hover:text-accent">natanael2ilva@gmail.com</a>
                     </li>
-                    <li class="flex items-center mb-4 text-sm">
+                    <li class="flex items-center mb-2 text-xs">
                         <i class="fas fa-map-marker-alt w-6 text-accent mr-2"></i>
                         <span>Goiania, GO</span>
                     </li>
-                    <li class="flex items-center mb-4 text-sm">
+                    <li class="flex items-center mb-2 text-xs">
                         <i class="fab fa-linkedin w-6 text-accent mr-2"></i>
-                        <a href="https://linkedin.com/in/natanael2ilva" class="hover:text-accent" target="_blank" rel="noopener noreferrer">linkedin.com/in/natanael2ilva</a>
+                        <a href="https://linkedin.com/in/natanael2ilva" class="hover:text-accent" target="_blank"
+                            rel="noopener noreferrer">linkedin.com/in/natanael2ilva</a>
                     </li>
-                    <li class="flex items-center mb-4 text-sm">
+                    <li class="flex items-center mb-2 text-xs">
                         <i class="fas fa-globe w-6 text-accent mr-2"></i>
-                        <a href="https://n2ilva.github.io/MeuPortifolio/" class="hover:text-accent" target="_blank" rel="noopener noreferrer">n2ilva.github.io/MeuPortifolio</a>
+                        <a href="https://n2ilva.github.io/MeuPortifolio/" class="hover:text-accent" target="_blank"
+                            rel="noopener noreferrer">n2ilva.github.io/MeuPortifolio</a>
                     </li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="text-xl uppercase border-b-2 border-accent pb-2 mb-3 text-primary">Habilidades</h3>
-                <p class="text-sm font-semibold mb-1">Infraestrutura & Redes</p>
-                <p class="text-sm text-gray-700 mb-2">Cisco (L2/L3) • Dell • SD-WAN • VLAN • DHCP • DNS • VPN IPsec • MPLS • BGP • OSPF • Voz IP</p>
-                <p class="text-sm font-semibold mb-1">Servidores & Virtualização</p>
-                <p class="text-sm text-gray-700 mb-2">Windows Server • Unix/Linux • Active Directory • Azure AD • GPO • VMware • Hyper-V</p>
-                <p class="text-sm font-semibold mb-1">Segurança & Monitoramento</p>
-                <p class="text-sm text-gray-700 mb-2">Firewall (PFsense) • SolarWinds • Zabbix</p>
-                <p class="text-sm font-semibold mb-1">Cloud & Banco de Dados</p>
-                <p class="text-sm text-gray-700 mb-2">AWS • Azure • GCP • MySQL • Oracle</p>
-                <p class="text-sm font-semibold mb-1">Gestão & Automação</p>
-                <p class="text-sm text-gray-700">BMC Remedy • ServiceNow • Jira • Scripts • ITIL • COBIT</p>
+                <h3 class="text-base uppercase border-b-2 border-accent pb-1 mb-2 text-primary font-bold">Habilidades</h3>
+                <p class="text-xs font-semibold mb-0.5">Infraestrutura & Redes</p>
+                <p class="text-xs text-gray-700 mb-1.5">Cisco (L2/L3) • Dell • SD-WAN • VLAN • DHCP • DNS • VPN IPsec •
+                    MPLS • BGP • OSPF • Voz IP</p>
+                <p class="text-xs font-semibold mb-0.5">Servidores & Virtualização</p>
+                <p class="text-xs text-gray-700 mb-1.5">Windows Server • Unix/Linux • Active Directory • Azure AD • GPO •
+                    VMware • Hyper-V</p>
+                <p class="text-xs font-semibold mb-0.5">Segurança & Monitoramento</p>
+                <p class="text-xs text-gray-700 mb-1.5">Firewall (PFsense) • Firewall (Fortigate) • SolarWinds • Zabbix</p>
+                <p class="text-xs font-semibold mb-0.5">Cloud & Banco de Dados</p>
+                <p class="text-xs text-gray-700 mb-1.5">AWS • Azure • GCP • MySQL • Oracle</p>
+                <p class="text-xs font-semibold mb-0.5">Gestão & Automação</p>
+                <p class="text-xs text-gray-700">BMC Remedy • ServiceNow • Jira • Scripts • ITIL • COBIT</p>
             </div>
 
             <div>
-                <h3 class="text-xl uppercase border-b-2 border-accent pb-2 mb-4 text-primary">Idiomas</h3>
+                <h3 class="text-base uppercase border-b-2 border-accent pb-1 mb-2 text-primary font-bold">Idiomas</h3>
                 <ul class="list-none">
-                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                    <li class="flex justify-between mb-1 border-b border-gray-300 pb-0.5 text-xs">
                         <span>Português</span>
-                        <span class="font-bold text-gray-600 text-sm">Nativo</span>
+                        <span class="font-bold text-gray-600">Nativo</span>
                     </li>
-                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                    <li class="flex justify-between mb-1 border-b border-gray-300 pb-0.5 text-xs">
                         <span>Inglês</span>
-                        <span class="font-bold text-gray-600 text-sm">Técnico (leitura e escrita)</span>
+                        <span class="font-bold text-gray-600">Técnico</span>
                     </li>
-                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                    <li class="flex justify-between mb-1 border-b border-gray-300 pb-0.5 text-xs">
                         <span>Espanhol</span>
-                        <span class="font-bold text-gray-600 text-sm">Básico</span>
+                        <span class="font-bold text-gray-600">Básico</span>
                     </li>
                 </ul>
             </div>
 
             <div>
-                <h3 class="text-xl uppercase border-b-2 border-accent pb-2 mb-4 text-primary">Pretensões</h3>
+                <h3 class="text-base uppercase border-b-2 border-accent pb-1 mb-2 text-primary font-bold">Pretensões</h3>
                 <ul class="list-none">
-                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                    <li class="flex justify-between mb-1 border-b border-gray-300 pb-0.5 text-xs">
                         <span>Pretensão Salarial</span>
-                        <span class="font-bold text-gray-600 text-sm">A combinar</span>
+                        <span class="font-bold text-gray-600">A combinar</span>
                     </li>
-                    <li class="flex justify-between mb-2 border-b border-gray-300 pb-1">
+                    <li class="flex justify-between mb-1 border-b border-gray-300 pb-0.5 text-xs">
                         <span>Regime de Trabalho</span>
-                        <span class="font-bold text-gray-600 text-sm">CLT | PJ</span>
+                        <span class="font-bold text-gray-600">CLT | PJ</span>
                     </li>
                 </ul>
             </div>
         </aside>
 
-        <main class="w-[70%] p-5">
+        <main class="w-[70%] p-4">
             <section>
-                <h2 class="text-2xl text-primary border-b-2 border-gray-200 pb-2 mb-8 flex items-center">Sobre Mim</h2>
-                <p class="text-gray-800 text-justify">
-                    Profissional com <strong>6 anos de experiência</strong> em <strong>Infraestrutura de Redes e TI</strong>, atuando na 
-                    estabilidade, segurança e disponibilidade de ambientes corporativos. Experiência com <strong>Windows Server</strong> 
-                    e <strong>Unix/Linux</strong>, <strong>Active Directory</strong>, <strong>VPN</strong>, <strong>virtualização</strong> 
-                    (VMware e Hyper-V) e ambientes Cloud (<strong>AWS</strong>, <strong>Azure</strong> e <strong>GCP</strong>). Atuação 
-                    baseada em boas práticas <strong>ITIL</strong> e <strong>COBIT</strong>, com foco em SLA, continuidade de serviços e 
+                <h2 class="text-lg text-primary border-b-2 border-gray-200 pb-1 mb-3 font-bold">Sobre Mim</h2>
+                <p class="text-gray-800 text-justify text-xs">
+                    Profissional com <strong>6 anos de experiência</strong> em <strong>Infraestrutura de Redes e
+                        TI</strong>, atuando na
+                    estabilidade, segurança e disponibilidade de ambientes corporativos. Experiência com <strong>Windows
+                        Server</strong>
+                    e <strong>Unix/Linux</strong>, <strong>Active Directory</strong>, <strong>VPN</strong>,
+                    <strong>virtualização</strong>
+                    (VMware e Hyper-V) e ambientes Cloud (<strong>AWS</strong>, <strong>Azure</strong> e
+                    <strong>GCP</strong>). Atuação
+                    baseada em boas práticas <strong>ITIL</strong> e <strong>COBIT</strong>, com foco em SLA,
+                    continuidade de serviços e
                     melhoria contínua.
                 </p>
             </section>
 
             <section>
-                <h2 class="text-2xl text-primary border-b-2 border-gray-200 pb-2 mb-8 mt-8 flex items-center">
+                <h2 class="text-lg text-primary border-b-2 border-gray-200 pb-1 mb-3 mt-4 font-bold">
                     Experiência Profissional</h2>
 
-                <div class="mb-8">
-                    <div class="flex justify-between items-baseline mb-1">
-                        <h3 class="text-lg font-bold text-secondary">Suporte Técnico</h3>
-                        <span class="text-sm text-accent font-medium">2021 - 2025</span>
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline mb-0.5">
+                        <h3 class="text-sm font-bold text-secondary">Suporte Técnico</h3>
+                        <span class="text-xs text-accent font-medium">2021 - 2025</span>
                     </div>
-                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Dexian Brasil</h4>
-                    <ul class="text-gray-800 text-sm list-disc ml-5 space-y-1">
-                        <li>Manutenção preventiva e corretiva em equipamentos de rede <strong>Cisco</strong> e <strong>Dell</strong> (Switches, Roteadores, Firewalls), garantindo alta disponibilidade dos serviços</li>
-                        <li>Gerenciamento de chamados via <strong>BMC Remedy</strong>, com cumprimento de SLA e priorização conforme criticidade</li>
-                        <li>Administração de usuários e políticas de acesso no <strong>Azure Active Directory</strong></li>
-                        <li>Monitoramento de infraestrutura utilizando <strong>SolarWinds</strong>, identificando e resolvendo incidentes proativamente</li>
-                        <li>Suporte a conectividade Wi-Fi/Ethernet, incluindo configuração de <strong>VLANs</strong>, <strong>DHCP</strong> e <strong>DNS</strong></li>
-                        <li>Colaboração em projetos de modernização tecnológica, contribuindo para otimização da infraestrutura</li>
+                    <h4 class="text-xs font-medium text-gray-600 mb-1 italic">Dexian Brasil</h4>
+                    <ul class="text-gray-800 text-xs list-disc ml-4 space-y-0.5">
+                        <li>Manutenção preventiva/corretiva em equipamentos <strong>Cisco</strong> e <strong>Dell</strong> (Switches, Roteadores, Firewalls)</li>
+                        <li>Gerenciamento de chamados via <strong>BMC Remedy</strong>, cumprimento de SLA e administração <strong>Azure AD</strong></li>
+                        <li>Monitoramento com <strong>SolarWinds</strong> e suporte a conectividade Wi-Fi/Ethernet (<strong>VLANs, DHCP, DNS</strong>)</li>
                     </ul>
                 </div>
 
-                <div class="mb-8">
-                    <div class="flex justify-between items-baseline mb-1">
-                        <h3 class="text-lg font-bold text-secondary">Suporte Técnico</h3>
-                        <span class="text-sm text-accent font-medium">2020 - 2021</span>
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline mb-0.5">
+                        <h3 class="text-sm font-bold text-secondary">Suporte Técnico</h3>
+                        <span class="text-xs text-accent font-medium">2020 - 2021</span>
                     </div>
-                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Solid Técnologia</h4>
-                    <ul class="text-gray-800 text-sm list-disc ml-5 space-y-1">
-                        <li>Suporte técnico e gestão de infraestrutura de redes de dados, incluindo configuração de switches e roteadores</li>
-                        <li>Monitoramento de ativos de rede e administração de servidores <strong>Windows Server</strong> e <strong>Linux</strong></li>
-                        <li>Configuração e administração de firewall <strong>PFsense</strong>, implementando regras de segurança e controle de acesso</li>
-                        <li>Gestão de <strong>GPO (Group Policy Objects)</strong> em servidores Windows, configurando políticas de segurança e acesso</li>
-                        <li>Administração de servidores <strong>Active Directory</strong> e <strong>Banco de Dados</strong>, incluindo configuração de <strong>DHCP</strong> e <strong>DNS</strong></li>
+                    <h4 class="text-xs font-medium text-gray-600 mb-1 italic">Solid Técnologia</h4>
+                    <ul class="text-gray-800 text-xs list-disc ml-4 space-y-0.5">
+                        <li>Gestão de infraestrutura de redes e administração de servidores <strong>Windows Server</strong> e <strong>Linux</strong></li>
+                        <li>Configuração de firewall <strong>PFsense</strong> e gestão de <strong>GPO</strong> em servidores Windows</li>
+                        <li>Administração <strong>Active Directory</strong>, <strong>Banco de Dados</strong>, <strong>DHCP</strong> e <strong>DNS</strong></li>
                     </ul>
                 </div>
 
-                <div class="mb-8">
-                    <div class="flex justify-between items-baseline mb-1">
-                        <h3 class="text-lg font-bold text-secondary">Analista SD-WAN</h3>
-                        <span class="text-sm text-accent font-medium">2017 - 2019</span>
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline mb-0.5">
+                        <h3 class="text-sm font-bold text-secondary">Analista SD-WAN</h3>
+                        <span class="text-xs text-accent font-medium">2017 - 2019</span>
                     </div>
-                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Ericsson</h4>
-                    <ul class="text-gray-800 text-sm list-disc ml-5 space-y-1">
-                        <li>Migração de tecnologia legada para <strong>SD-WAN</strong> em agências bancárias, mantendo convivência entre <strong>SD-WAN</strong> e <strong>MPLS</strong></li>
-                        <li>Criação de scripts para automação de configuração em roteadores <strong>Cisco Layer 3</strong>, utilizando protocolos <strong>BGP</strong> e <strong>OSPF</strong></li>
-                        <li>Implementação de <strong>VPN IPsec</strong> para comunicação segura entre sites</li>
-                        <li>Migração de telefonia: remoção de tecnologia <strong>E1</strong> e implementação de <strong>Voz IP</strong> com controllers Cisco para telefones IP</li>
-                        <li>Execução de testes e validações de funcionamento para garantir a qualidade da migração e disponibilidade dos serviços</li>
+                    <h4 class="text-xs font-medium text-gray-600 mb-1 italic">Ericsson</h4>
+                    <ul class="text-gray-800 text-xs list-disc ml-4 space-y-0.5">
+                        <li>Migração de tecnologia legada para <strong>SD-WAN</strong> em agências bancárias, convivência <strong>SD-WAN/MPLS</strong></li>
+                        <li>Automação de configuração em roteadores <strong>Cisco Layer 3</strong> com scripts (<strong>BGP, OSPF, VPN IPsec</strong>)</li>
+                        <li>Migração de telefonia <strong>E1</strong> para <strong>Voz IP</strong> com controllers Cisco</li>
                     </ul>
                 </div>
 
-                <div class="mb-8">
-                    <div class="flex justify-between items-baseline mb-1">
-                        <h3 class="text-lg font-bold text-secondary">Analista De Redes N2</h3>
-                        <span class="text-sm text-accent font-medium">2016 - 2017</span>
+                <div class="mb-4">
+                    <div class="flex justify-between items-baseline mb-0.5">
+                        <h3 class="text-sm font-bold text-secondary">Analista De Redes N2</h3>
+                        <span class="text-xs text-accent font-medium">2016 - 2017</span>
                     </div>
-                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Atento Brasil</h4>
-                    <ul class="text-gray-800 text-sm list-disc ml-5 space-y-1">
-                        <li>Atendimento de tickets de alta prioridade para empresas do contrato da <strong>Telefônica Brasil</strong>, garantindo disponibilidade de redes de Dados e Voz</li>
-                        <li>Gerenciamento de chamados via <strong>BMC Remedy</strong>, com cumprimento rigoroso de SLA conforme criticidade e porte do cliente</li>
-                        <li>Execução de testes <strong>proativos e reativos</strong> na rede para identificar falhas antes que impactem os usuários</li>
-                        <li>Configurações de reparo em switches <strong>Cisco Layer 2 e Layer 3</strong>.</li>
-                        <li>Monitoramento de equipamentos utilizando <strong>SolarWinds</strong>, identificando gargalos e propondo melhorias</li>
-                        <li>Solicitação e coordenação de técnicos de campo para resolução de incidentes que não podiam ser solucionados remotamente</li>
-                        <li>Escalação para supervisores e coordenadores em casos de problemas massivos que afetavam múltiplos clientes simultaneamente</li>
+                    <h4 class="text-xs font-medium text-gray-600 mb-1 italic">Atento Brasil</h4>
+                    <ul class="text-gray-800 text-xs list-disc ml-4 space-y-0.5">
+                        <li>Atendimento de tickets alta prioridade para <strong>Telefônica Brasil</strong>, garantindo disponibilidade de redes</li>
+                        <li>Gerenciamento de chamados via <strong>BMC Remedy</strong> e testes proativos/reativos na rede</li>
+                        <li>Configurações em switches <strong>Cisco Layer 2/3</strong> e monitoramento com <strong>SolarWinds</strong></li>
                     </ul>
                 </div>
             </section>
 
-            <section>
-                <h2 class="text-2xl text-primary border-b-2 border-gray-200 pb-2 mb-8 mt-8 flex items-center">Formação
-                    Acadêmica</h2>
-
-                <div class="mb-8">
-                    <div class="flex justify-between items-baseline mb-1">
-                        <h3 class="text-lg font-bold text-secondary">Análise e Desenvolvimento de Sistemas</h3>
-                        <span class="text-sm text-accent font-medium">2025 - Presente</span>
+            <section class="mt-4">
+                <h2 class="text-lg text-primary border-b-2 border-gray-200 pb-1 mb-3 font-bold">Formação Acadêmica</h2>
+                <div class="grid grid-cols-2 gap-x-6 gap-y-2">
+                    <div>
+                        <div class="flex justify-between items-baseline mb-0.5">
+                            <h3 class="text-sm font-bold text-secondary">Análise e Desenvolvimento de Sistemas</h3>
+                            <span class="text-xs text-accent font-medium whitespace-nowrap ml-2">2025 - Em Andamento</span>
+                        </div>
+                        <h4 class="text-xs font-medium text-gray-600 italic">Estácio de Sá</h4>
                     </div>
-                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Estácio de Sá</h4>
-                </div>
 
-                <div class="mb-8">
-                    <div class="flex justify-between items-baseline mb-1">
-                        <h3 class="text-lg font-bold text-secondary">Redes de Computadores</h3>
-                        <span class="text-sm text-accent font-medium">2023 - 2025</span>
+                    <div>
+                        <div class="flex justify-between items-baseline mb-0.5">
+                            <h3 class="text-sm font-bold text-secondary">Redes de Computadores</h3>
+                            <span class="text-xs text-accent font-medium whitespace-nowrap ml-2">2023 - 2025</span>
+                        </div>
+                        <h4 class="text-xs font-medium text-gray-600 italic">Uninove</h4>
                     </div>
-                    <h4 class="text-base font-medium text-gray-600 mb-2 italic">Uninove</h4>
                 </div>
             </section>
-        </main>
+
+            <section class="mt-4">
+                <h2 class="text-lg text-primary border-b-2 border-gray-200 pb-1 mb-3 font-bold">Extra Curriculares</h2>
+                <div class="grid grid-cols-2 gap-x-6 gap-y-2">
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="text-base font-bold text-secondary">Amazon AWS Certified Cloud</h3>
+                            <span class="text-xs text-accent font-medium whitespace-nowrap ml-2">23h - 2025</span>
+                        </div>
+                        <h4 class="text-sm font-medium text-gray-600 italic">Udemy</h4>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="text-base font-bold text-secondary">Microsoft AZ-900</h3>
+                            <span class="text-xs text-accent font-medium whitespace-nowrap ml-2">5h - 2024</span>
+                        </div>
+                        <h4 class="text-sm font-medium text-gray-600 italic">Udemy</h4>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="text-base font-bold text-secondary">Google Associate Cloud Engineer</h3>
+                            <span class="text-xs text-accent font-medium whitespace-nowrap ml-2">9h - 2024</span>
+                        </div>
+                        <h4 class="text-sm font-medium text-gray-600 italic">Udemy</h4>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="text-base font-bold text-secondary">Fortigate Firewall NSE4</h3>
+                            <span class="text-xs text-accent font-medium whitespace-nowrap ml-2">8h - 2024</span>
+                        </div>
+                        <h4 class="text-sm font-medium text-gray-600 italic">Udemy</h4>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="text-base font-bold text-secondary">CCNA 200-301</h3>
+                            <span class="text-xs text-accent font-medium whitespace-nowrap ml-2">80h - 2024</span>
+                        </div>
+                        <h4 class="text-sm font-medium text-gray-600 italic">Udemy</h4>
+                    </div>
+                </div>
+            </section>
+    </main>
     </div>
 </body>
 
